@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "675665172677",
+    "project_id": "phan-anh-do-thi-79f8c",
+    "storage_bucket": "phan-anh-do-thi-79f8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675665172677:android:a38640386290a634f938ac",
+        "android_client_info": {
+          "package_name": "n.quang.padt.phan_anh_do_thi_3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClVBdh4hf50c8FqBfzsnVB2ofvw6gmsho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
