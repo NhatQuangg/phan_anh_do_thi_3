@@ -4,11 +4,12 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:phan_anh_do_thi/constant.dart';
-import 'package:phan_anh_do_thi/screens/home/components/hom_controller.dart';
-import 'package:phan_anh_do_thi/screens/home/components/home_body.dart';
-import 'package:phan_anh_do_thi/screens/home/components/home_bottom_navbar.dart';
-import 'package:phan_anh_do_thi/screens/home/components/qr_code_scanner.dart';
+import 'package:phan_anh_do_thi_3/constants/constant.dart';
+import 'package:phan_anh_do_thi_3/screens/home/components/hom_controller.dart';
+import 'package:phan_anh_do_thi_3/screens/home/components/home_body.dart';
+import 'package:phan_anh_do_thi_3/screens/home/components/home_bottom_navbar.dart';
+import 'package:phan_anh_do_thi_3/screens/home/components/qr_code_scanner.dart';
+
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class HomeScreen extends StatefulWidget {

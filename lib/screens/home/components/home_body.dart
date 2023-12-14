@@ -3,8 +3,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:phan_anh_do_thi/screens/home/components/hom_controller.dart';
-import 'package:phan_anh_do_thi/screens/reflects/reflects_screen.dart';
+import 'package:phan_anh_do_thi_3/screens/home/components/hom_controller.dart';
+import 'package:phan_anh_do_thi_3/screens/reflects/reflects_screen.dart';
+
 
 class HomeBody extends StatelessWidget {
   const HomeBody({

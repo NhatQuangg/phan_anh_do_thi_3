@@ -33,7 +33,6 @@ class _SignupState extends State<Signup> {
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField(
-                  // controller: controller.,
                   decoration: InputDecoration(
                       labelText: "Họ tên",
                       labelStyle: TextStyle(
@@ -45,15 +44,15 @@ class _SignupState extends State<Signup> {
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue, width: 2.0)
                       ),
-                    // controller: ,
-                    // validator: ,
                   ),
-                  obscureText: true,
+                  // obscureText: true,
+                  controller: controller.fullName,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField(
+                  controller: controller.email,
                   decoration: InputDecoration(
                       labelText: "Email",
                       labelStyle: TextStyle(
@@ -65,14 +64,13 @@ class _SignupState extends State<Signup> {
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue, width: 2.0)
                       )
-                    // controller: ,
-                    // validator: ,
                   ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField(
+                  controller: controller.phoneNo,
                   decoration: InputDecoration(
                       labelText: "Số điện thoại",
                       labelStyle: TextStyle(
@@ -92,6 +90,7 @@ class _SignupState extends State<Signup> {
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField(
+                  controller: controller.password,
                   decoration: InputDecoration(
                       labelText: "Mật khẩu",
                       labelStyle: TextStyle(
@@ -157,10 +156,10 @@ class _SignupState extends State<Signup> {
                   height: 50,
                   child: TextButton(
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => Login()),
-                        // );
+                        if (_formKey.currentState!.validate()) {
+                          SignUpController.instance
+                              .registerUser(controller.email.text.trim(), controller.password.text.trim());
+                        }
                       },
                       style: TextButton.styleFrom(
                         backgroundColor: Color(0xff152534),
@@ -171,7 +170,8 @@ class _SignupState extends State<Signup> {
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
-                      )),
+                      )
+                  ),
                 ),
               )
             ],
